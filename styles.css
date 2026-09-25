@@ -167,7 +167,9 @@ body.menu-open .mnav{opacity:1;visibility:visible;transform:none;transition:opac
 .ba-i figcaption{position:absolute;left:12px;bottom:12px;padding:7px 11px;border-radius:999px;background:rgba(251,248,245,.92);font:700 11px/1 var(--ft);letter-spacing:.12em;text-transform:uppercase;color:var(--ink)}
 .ba-after figcaption{background:var(--ink);color:#fff}
 .cimg.ba2{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:2px}
-.cimg.ba2 img,.cimg.ba2 .ba-h{min-width:0;position:relative}
+.cimg.ba2 img{min-width:0;min-height:0}
+.ph.ba.bv,.cimg.ba2.bv{grid-template-columns:1fr;grid-template-rows:1fr 1fr}
+.cimg.ba2.bv i:nth-of-type(1){bottom:calc(50% + 9px)}.cimg.ba2.bv i:nth-of-type(2){left:10px}
 /* заглушка фото: до прихода снимков от клиентки. Замена - <img> вместо .stub */
 .cimg{position:relative}
 .stub{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:14px;text-align:center;
@@ -266,6 +268,9 @@ html.no-plate .ticker{animation:none}
 .facts{list-style:none;margin:0 0 26px;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .facts b{display:block;font:300 44px/1 var(--fd);color:var(--rose2);margin-bottom:6px}
 .facts span{font:400 13px/1.4 var(--ft);color:var(--brown)}
+.docs{margin:0 0 26px;padding:16px 20px;border-left:2px solid var(--rose);border-radius:0 14px 14px 0;background:rgba(239,228,219,.6);display:flex;flex-direction:column;gap:5px}
+.docs b{font:500 18px/1.25 var(--fd);color:var(--ink)}
+.docs span{font:400 14px/1.5 var(--ft);color:var(--brown)}
 
 /* вопросы */
 .faq details{border-top:1px solid rgba(90,70,63,.22)}
