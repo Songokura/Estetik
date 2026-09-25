@@ -104,23 +104,20 @@ body.menu-open .mnav{opacity:1;visibility:visible;transform:none;transition:opac
 .t-cream{background:var(--cream)}
 
 /* герой */
-.hero-ph{position:absolute;inset:0;z-index:1;
-  -webkit-mask-image:
-    radial-gradient(circle at var(--c1,72% 22%),#000 var(--i1,0px),transparent var(--o1,0px)),
-    radial-gradient(circle at var(--c2,76% 52%),#000 var(--i2,0px),transparent var(--o2,0px)),
-    radial-gradient(circle at var(--c3,70% 82%),#000 var(--i3,0px),transparent var(--o3,0px));
-  mask-image:
-    radial-gradient(circle at var(--c1,72% 22%),#000 var(--i1,0px),transparent var(--o1,0px)),
-    radial-gradient(circle at var(--c2,76% 52%),#000 var(--i2,0px),transparent var(--o2,0px)),
-    radial-gradient(circle at var(--c3,70% 82%),#000 var(--i3,0px),transparent var(--o3,0px));
-  -webkit-mask-composite:source-over;mask-composite:add}
-.hero-ph img{position:absolute;top:0;right:max(3%,calc(50% - 720px));height:100%;width:auto;aspect-ratio:1365/1820;object-fit:cover;object-position:50% 0;transform:scale(calc(1.04 - .04 * var(--stay,0)));transform-origin:50% 40%}
+/* фото героя: арка-портрет справа. Интро - шторка снизу вверх и мягкий зум,
+   по скроллу - медленный наезд. Изолинии - только фоном вокруг арки, по фото не идут. */
+.hero-ph{position:absolute;z-index:1;right:max(5%,calc(50% - 670px));top:calc(50% + var(--hh) / 2 - 1svh);
+  width:min(calc((100svh - var(--hh) - 11svh) * .75),40vw);aspect-ratio:3/4;transform:translateY(-50%);
+  border-radius:999px 999px 28px 28px;overflow:hidden;background:var(--sand);
+  box-shadow:0 30px 60px -30px rgba(58,44,39,.35);
+  clip-path:inset(calc((1 - var(--intro,1)) * 100%) 0 0 0 round 999px 999px 28px 28px)}
+.hero-ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 12%;
+  transform:scale(calc(1.14 - .14 * var(--intro,1) + .06 * var(--stay,0)));transform-origin:50% 35%}
 .iso{position:absolute;inset:0;z-index:0;pointer-events:none}
-.iso i{position:absolute;left:var(--x);top:var(--y);width:var(--d);height:var(--d);opacity:var(--o,0);border:1px solid rgba(184,120,107,.55);border-radius:50%;transform:translate(-50%,-50%)}
-.hero-veil{position:absolute;inset:0;z-index:2;pointer-events:none;
-  background:linear-gradient(90deg,var(--paper) 0%,rgba(247,242,237,.96) 30%,rgba(247,242,237,.55) 50%,rgba(247,242,237,0) 66%)}
+.iso i{position:absolute;left:var(--x);top:var(--y);width:var(--d);height:var(--d);opacity:var(--o,0);border:1px solid rgba(184,120,107,.42);border-radius:50%;transform:translate(-50%,-50%)}
+.hero-veil{display:none;position:absolute;inset:0;z-index:2;pointer-events:none}
 .hero-in{position:relative;z-index:3;height:100%;display:flex;flex-direction:column;justify-content:center;padding-top:var(--hh);padding-bottom:64px}
-.hero-in>*{max-width:56%}
+.hero-in>*{max-width:52%}
 .hero-in .lead{font-size:clamp(15px,1.2vw,18px)}
 .hero-in .btns{margin-top:28px}
 .hero-in>*{opacity:0;transform:translateY(22px);transition:opacity .9s ease,transform .9s ease}
@@ -168,11 +165,10 @@ html.no-plate .pw{height:auto}
 html.no-plate .plate{position:relative;height:auto;min-height:0;transform:none;border-radius:0}
 html.no-plate .plate::after{display:none}
 html.no-plate .hero{min-height:100svh}
-html.no-plate .hero-ph,html.no-plate .ph img{-webkit-mask-image:none;mask-image:none;filter:none}
+html.no-plate .ph img{-webkit-mask-image:none;mask-image:none;filter:none}
 html.no-plate .ph::before,html.no-plate .iso{display:none}
 html.no-plate .hero-in>*,html.no-plate .svc .txt>*{opacity:1;transform:none}
 html.no-plate .hero{display:flex;flex-direction:column;justify-content:flex-end}html.no-plate .hero-in{height:auto}
-@media (min-width:761px){html.no-plate .hero-ph img{-webkit-mask-image:linear-gradient(90deg,transparent,#000 30%);mask-image:linear-gradient(90deg,transparent,#000 30%)}}
 html.no-plate .svc-in{min-height:100svh;padding-bottom:40px}
 html.no-plate .ticker{animation:none}
 
@@ -327,8 +323,10 @@ html.no-plate .ticker{animation:none}
   .call span{display:none}
   .lang button{padding:6px 10px}
   .bar{display:grid}
-  .hero-ph img{position:static;width:100%;aspect-ratio:auto;object-position:50% 0;transform:scale(calc(1.08 - .08 * var(--stay,0)));transform-origin:50% 30%}
-  .hero-veil{background:linear-gradient(180deg,rgba(247,242,237,.1) 0%,rgba(247,242,237,0) 22%,rgba(247,242,237,.86) 50%,var(--paper) 66%)}
+  .hero-ph{inset:0;width:auto;aspect-ratio:auto;transform:none;border-radius:0;box-shadow:none;background:none;clip-path:none;opacity:var(--intro,1)}
+  .hero-ph img{position:static;height:auto;aspect-ratio:auto;object-position:50% 0;transform:scale(calc(1.08 - .04 * var(--intro,1) - .04 * var(--stay,0)));transform-origin:50% 30%}
+  .iso{display:none}
+  .hero-veil{display:block;background:linear-gradient(180deg,rgba(247,242,237,.1) 0%,rgba(247,242,237,0) 22%,rgba(247,242,237,.86) 50%,var(--paper) 66%)}
   .hero-in{justify-content:flex-end;padding-bottom:64px}
   .hero-in>*{max-width:100%}
   .hero-in .lead{font-size:14px;line-height:1.45}

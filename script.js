@@ -174,46 +174,27 @@ var introK = 1, introDone = true;
 var DBG = new URLSearchParams(location.search);
 var dbgIntro = parseFloat(DBG.get("intro")), dbgOpen = parseFloat(DBG.get("open")), dbgStay = parseFloat(DBG.get("stay"));
 
-/* изолинии: по три кольца вокруг каждого пятна */
+/* изолинии: кольца вокруг арки с фото, фоном за ней */
 var rings = [];
 if (isoBox) {
-  for (var si = 0; si < 3; si++) for (var k = 1; k <= 3; k++) {
-    var el = document.createElement("i"); el.dataset.s = si; el.dataset.k = k;
+  for (var k = 1; k <= 4; k++) {
+    var el = document.createElement("i"); el.dataset.k = k;
     isoBox.appendChild(el); rings.push(el);
   }
 }
-function heroGeom(W, H){
-  var mob = W <= 760;
-  var base = mob ? Math.min(W * .30, H * .16) : Math.min(W * .15, H * .30);
-  return {
-    c: mob ? [[.50 * W, .19 * H], [.56 * W, .40 * H], [.47 * W, .60 * H]]
-           : [[.68 * W, .27 * H], [.715 * W, .55 * H], [.66 * W, .84 * H]],
-    r: [base * 1.04, base * 1.18, base * .98],
-    soft: base * .42,
-    Rmax: Math.hypot(W, H) * 1.02
-  };
-}
 function heroSpots(intro, stay){
-  if (!heroPh) return;
-  var W = innerWidth, H = innerHeight, g = heroGeom(W, H);
-  /* интро: пятка → свод → пальцы; скролл: те же три фазы */
-  var b = [easeOut(clamp(intro * 1.6 - .6)), easeOut(clamp(intro * 1.6 - .3)), easeOut(clamp(intro * 1.6))];
-  var s = [easeIn(clamp(stay * 1.35 - .35)), easeIn(clamp(stay * 1.35 - .18)), easeIn(clamp(stay * 1.35))];
-  for (var i = 0; i < 3; i++) {
-    var rest = g.r[i] * b[i];
-    var r = rest + (g.Rmax - rest) * s[i];
-    var inner = Math.max(0, r - g.soft * (1 + 2 * s[i]));
-    heroPh.style.setProperty("--c" + (i + 1), g.c[i][0].toFixed(0) + "px " + g.c[i][1].toFixed(0) + "px");
-    heroPh.style.setProperty("--o" + (i + 1), r.toFixed(0) + "px");
-    heroPh.style.setProperty("--i" + (i + 1), inner.toFixed(0) + "px");
-  }
+  if (!heroPh || !rings.length) return;
+  var box = hero.getBoundingClientRect(), r = heroPh.getBoundingClientRect();
+  var cx = r.left - box.left + r.width / 2, cy = r.top - box.top + r.height * .42;
+  var fade = 1 - clamp(stay * 2.2);
   rings.forEach(function(el){
-    var i = +el.dataset.s, kk = +el.dataset.k;
-    var rr = g.r[i] * b[i] + kk * (g.soft * .55) + (g.Rmax - g.r[i]) * s[i];
-    el.style.setProperty("--x", g.c[i][0].toFixed(0) + "px");
-    el.style.setProperty("--y", g.c[i][1].toFixed(0) + "px");
+    var kk = +el.dataset.k;
+    var show = easeOut(clamp(intro * 1.6 - kk * .15));
+    var rr = r.height * .5 + kk * r.width * .16 * (.7 + .3 * show) + stay * r.width * .4;
+    el.style.setProperty("--x", cx.toFixed(0) + "px");
+    el.style.setProperty("--y", cy.toFixed(0) + "px");
     el.style.setProperty("--d", (2 * rr).toFixed(0) + "px");
-    el.style.setProperty("--o", (b[i] * (1 - kk * .24) * (1 - clamp(stay * 2.2))).toFixed(3));
+    el.style.setProperty("--o", (show * (1 - kk * .2) * fade).toFixed(3));
   });
 }
 function update(){
