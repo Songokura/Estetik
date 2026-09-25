@@ -271,6 +271,8 @@ html.no-plate .ticker{animation:none}
 .docs{margin:0 0 26px;padding:16px 20px;border-left:2px solid var(--rose);border-radius:0 14px 14px 0;background:rgba(239,228,219,.6);display:flex;flex-direction:column;gap:5px}
 .docs b{font:500 18px/1.25 var(--fd);color:var(--ink)}
 .docs span{font:400 14px/1.5 var(--ft);color:var(--brown)}
+.docs-list{list-style:none;margin:8px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.docs-list li{padding:6px 12px;border-radius:999px;background:rgba(251,248,245,.9);border:1px solid rgba(58,44,39,.12);font:500 13px/1.2 var(--ft);color:var(--ink)}
 
 /* вопросы */
 .faq details{border-top:1px solid rgba(90,70,63,.22)}
