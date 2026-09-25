@@ -167,7 +167,16 @@ body.menu-open .mnav{opacity:1;visibility:visible;transform:none;transition:opac
 .ba-i figcaption{position:absolute;left:12px;bottom:12px;padding:7px 11px;border-radius:999px;background:rgba(251,248,245,.92);font:700 11px/1 var(--ft);letter-spacing:.12em;text-transform:uppercase;color:var(--ink)}
 .ba-after figcaption{background:var(--ink);color:#fff}
 .cimg.ba2{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:2px}
-.cimg.ba2 img{min-width:0}
+.cimg.ba2 img,.cimg.ba2 .ba-h{min-width:0;position:relative}
+/* заглушка фото: до прихода снимков от клиентки. Замена - <img> вместо .stub */
+.cimg{position:relative}
+.stub{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:14px;text-align:center;
+  background:repeating-linear-gradient(135deg,rgba(184,120,107,.09) 0 1px,transparent 1px 13px),linear-gradient(160deg,#F3E9E3,#E8D9CF)}
+.stub svg{width:30px;height:64px;color:var(--rose);opacity:.6;margin-bottom:4px}
+.stub b{font:400 clamp(17px,1.5vw,21px)/1.2 var(--fd);color:var(--ink)}
+.stub small{font:700 10px/1.35 var(--ft);letter-spacing:.14em;text-transform:uppercase;color:var(--rose2);max-width:24ch}
+.ba2 .stub{padding:10px 8px 40px}.ba2 .stub svg{width:22px;height:47px}.ba2 .stub b{font-size:16px}.ba2 .stub small{display:none}
+.ba-i .stub{padding-bottom:52px}
 .cimg.ba2 i{position:absolute;bottom:10px;padding:5px 9px;border-radius:999px;font:700 10px/1 var(--ft);font-style:normal;letter-spacing:.12em;text-transform:uppercase;background:rgba(251,248,245,.92);color:var(--ink)}
 .cimg.ba2 i:nth-of-type(1){left:10px}.cimg.ba2 i:nth-of-type(2){left:calc(50% + 11px);background:var(--ink);color:#fff}
 
