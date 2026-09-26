@@ -31,7 +31,7 @@ window.SITE_EN = {
   "s3.b1":"Sterile single-use tools","s3.b2":"Gentle, no damage to the skin","s3.b3":"Home care advice",
 
   "s5.k":"Warts","s5.t":"Warts on feet and hands",
-  "s5.l":"Plantar warts, warts on toes and hands. I treat them gently, step by step and without pain - you can walk right after the procedure.",
+  "s5.l":"Plantar warts, warts on toes and hands. I treat them gently and step by step - you can walk right after the procedure.",
   "s5.b1":"Plantar and on the toes","s5.b2":"Warts on hands","s5.b3":"A dermatologist's opinion if needed",
 
   "s4.k":"Diabetic foot","s4.t":"Diabetic feet can't wait",
@@ -54,7 +54,7 @@ window.SITE_EN = {
   "g.k":"Work photos","g.t":"From the clinic, no filters",
   "g.l":"Warts, ingrown nails, fungus, foot diagnostics and insoles - real client cases.",
   "g.1":"Wart on a toe","g.2":"Plantar warts","g.3":"Warts during treatment","g.4":"Foot after treatment",
-  "g.5":"Painless wart treatment","g.6":"Inflamed ingrown toenail","g.7":"Corrective brace","g.8":"Brace on an ingrown nail",
+  "g.5":"Wart treatment: before and after","g.6":"Inflamed ingrown toenail","g.7":"Corrective brace","g.8":"Brace on an ingrown nail",
   "g.9":"Nail affected by fungus","g.10":"Podoscope diagnostics","g.11":"Footprint on a podoscope","g.12":"Tape to offload the foot",
   "g.13":"Foot cast with an orthopedist",
 
@@ -129,7 +129,7 @@ window.SITE_EN = {
   "lp.st.k":"Aktobe · podiatrist · orthopedic insoles",
   "lp.st.t1":"Orthopedic insoles -",
   "lp.st.t2":"made for your feet",
-  "lp.st.lead":"Podoscope diagnostics and custom insoles together with orthopedists from Moscow. For flat feet, bunions, extra weight and pregnancy. Visits from 15,000 KZT.",
+  "lp.st.lead":"Podoscope diagnostics and custom insoles together with orthopedists from Moscow. For flat feet, bunions, heel spurs, extra weight and pregnancy. Visits from 15,000 KZT.",
   "lp.b2.kak":"How a visit goes",
   "lp.bo.title":"Wart removal in Aktobe - podiatrist Marianna PRO",
   "lp.bo.desc":"Podiatrist Marianna, Aktobe: gentle treatment of plantar warts, warts on toes and on hands. Step by step, together with a dermatologist if needed. Visits from 15,000 KZT.",
