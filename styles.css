@@ -1,5 +1,5 @@
 /* ============================================================
-   ЭСТЕТИК - подолог, Актобе.
+   МАРИАННА PRO - подолог, Актобе.
    Сигнатура: отпечаток на подоскопе - фото проступает сквозь пятна давления
    (пятка → свод → пальцы), изолинии нагрузки тихим фоном.
    Плиты: герой + три услуги; остальное - обычная прокрутка.
@@ -59,9 +59,7 @@ button{font:inherit;color:inherit}
 .hdr.solid{background:rgba(247,242,237,.96);box-shadow:0 1px 0 var(--line)}
 .hdr-in{max-width:var(--wrap);margin:0 auto;padding:0 var(--gut);height:100%;display:flex;align-items:center;gap:22px}
 .logo{display:block;flex:0 0 auto;position:relative;z-index:2}
-.logo{text-decoration:none;color:var(--ink);display:flex;flex-direction:column;align-items:center;gap:5px;line-height:1}
-.wm-name{font:400 27px/1 var(--fd);letter-spacing:.2em;text-transform:uppercase;margin-right:-.2em}
-.wm-sub{font:600 8.5px/1 var(--ft);letter-spacing:.2em;text-transform:uppercase;color:var(--rose2);white-space:nowrap}
+.logo img{height:46px;width:auto;display:block}
 .nav{display:flex;gap:26px;flex:1;justify-content:center}
 .nav a{font:600 14px/1 var(--ft);color:var(--brown);text-decoration:none;padding:8px 0;position:relative;white-space:nowrap}
 .nav a::after{content:"";position:absolute;left:0;right:100%;bottom:2px;height:1px;background:var(--rose);transition:right .3s}
@@ -375,7 +373,7 @@ html.no-plate .ticker{animation:none}
   .case-months b{font-size:72px}
   .case-tag{left:8px;bottom:8px;padding:6px 9px;font-size:9.5px}
   :root{--hh:62px;--gut:16px;--r:20px}
-  .wm-name{font-size:22px}.wm-sub{display:none}
+  .logo img{height:38px}
   .ig-round{display:none}
   .call{width:42px;padding:0;justify-content:center}
   .call span{display:none}
@@ -428,7 +426,7 @@ html.no-plate .ticker{animation:none}
 /* три языка в шапке: на узком телефоне ужимаем знак и сегменты, чтобы бургер не уезжал за край */
 @media (max-width:420px){
   .hdr-in{gap:10px}
-  .wm-name{font-size:19px;letter-spacing:.14em;margin-right:-.14em}
+  .logo img{height:32px}
   .lang button{padding:6px 8px}
   .hdr-right{gap:6px}
 }

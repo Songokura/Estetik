@@ -1,8 +1,8 @@
-/* Английский словарь Эстетик. Грузится только по выбору EN или ?lang=en. */
+/* Английский словарь Марианна PRO. Грузится только по выбору EN или ?lang=en. */
 window.SITE_EN = {
-  "m.title":"Podiatrist in Aktobe - Estetik: ingrown toenails, nail fungus, orthopedic insoles",
+  "m.title":"Podiatrist in Aktobe - Marianna PRO: ingrown toenails, nail fungus, orthopedic insoles",
   "m.desc":"Podiatrist Marianna, Aktobe: ingrown toenail correction with a brace, no nail removal; nail care for fungus; orthopedic insoles; medical pedicure; calluses, corns and warts. 8 years of practice, 1000+ clients. Visits from 15,000 KZT, free online consultation by photo.",
-  "m.ogt":"Podiatrist in Aktobe - Estetik",
+  "m.ogt":"Podiatrist in Aktobe - Marianna PRO",
   "m.ogd":"Ingrown toenails without removal, nail care for fungus, orthopedic insoles, medical pedicure. 8 years of practice. Free online consultation by photo.",
 
   "logo.sub":"podiatry · pedicure · health",
@@ -94,7 +94,7 @@ window.SITE_EN = {
   "c.k":"Contacts","c.t":"Book a visit",
   "c.l":"Call or message on WhatsApp: I'll tell you what to do and find a time.",
   "c.addr":"Aktobe, 158B Eset Batyr St., Estetik salon","c.hours":"Daily 10:00-20:00, by appointment","c.yandex":"Yandex Maps",
-  "ft.1":"Estetik · podiatrist, Aktobe","ft.2":"By appointment only. Information on this site does not replace a specialist's consultation.",
+  "ft.1":"Marianna PRO · podiatrist, Aktobe","ft.2":"By appointment only. Information on this site does not replace a specialist's consultation.",
   "bar.tel":"Call",
 
   "mn.primer":"Case studies","ba.st1":"Without insoles","ba.st2":"With insoles",
@@ -111,15 +111,15 @@ window.SITE_EN = {
   "mq.list":"Ingrown toenail|A brace instead of surgery|Orthopedic insoles|Nail fungus|Diabetic foot|Medical pedicure|Deep corns|Calluses|Warts|Free online consultation",
 
   "__wa":{
-    hero:"Hello! I'm writing from the Estetik website. I'd like to book a visit. Problem: ",
-    vrosshiy:"Hello! I'm writing from the Estetik website.\nService: ingrown toenail correction.\nI'd like to book. Convenient time: ",
-    stelki:"Hello! I'm writing from the Estetik website.\nService: orthopedic insoles.\nI'd like to book a diagnostic visit. Convenient time: ",
-    gribok:"Hello! I'm writing from the Estetik website.\nService: nail care for fungus.\nI'd like to book. Convenient time: ",
-    borodavki:"Hello! I'm writing from the Estetik website.\nService: wart removal.\nI'd like to book. Convenient time: ",
-    diabet:"Hello! I'm writing from the Estetik website.\nService: diabetic foot care.\nI'd like to book. Convenient time: ",
-    pedikyur:"Hello! I'm writing from the Estetik website.\nService: medical pedicure.\nI'd like to book. Convenient time: ",
-    stopy:"Hello! I'm writing from the Estetik website.\nService: foot care (calluses, corns, cracked heels).\nI'd like to book. Convenient time: ",
+    hero:"Hello! I'm writing from the Marianna PRO website. I'd like to book a visit. Problem: ",
+    vrosshiy:"Hello! I'm writing from the Marianna PRO website.\nService: ingrown toenail correction.\nI'd like to book. Convenient time: ",
+    stelki:"Hello! I'm writing from the Marianna PRO website.\nService: orthopedic insoles.\nI'd like to book a diagnostic visit. Convenient time: ",
+    gribok:"Hello! I'm writing from the Marianna PRO website.\nService: nail care for fungus.\nI'd like to book. Convenient time: ",
+    borodavki:"Hello! I'm writing from the Marianna PRO website.\nService: wart removal.\nI'd like to book. Convenient time: ",
+    diabet:"Hello! I'm writing from the Marianna PRO website.\nService: diabetic foot care.\nI'd like to book. Convenient time: ",
+    pedikyur:"Hello! I'm writing from the Marianna PRO website.\nService: medical pedicure.\nI'd like to book. Convenient time: ",
+    stopy:"Hello! I'm writing from the Marianna PRO website.\nService: foot care (calluses, corns, cracked heels).\nI'd like to book. Convenient time: ",
     online:"Hello! I'd like a free online consultation by photo. Sending a photo of the problem:",
-    kontakty:"Hello! I'm writing from the Estetik website. Question: "
+    kontakty:"Hello! I'm writing from the Marianna PRO website. Question: "
   }
 };
