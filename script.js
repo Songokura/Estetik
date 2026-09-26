@@ -14,6 +14,8 @@
 
 var WA = "77056044869";
 var ASSET_V = ((document.currentScript && document.currentScript.src.match(/[?&]v=([^&]+)/)) || [])[1] || "";
+/* корень сайта - от адреса самого script.js: посадочные в подпапках берут словари из общего assets/lang/ */
+var BASE = ((document.currentScript && document.currentScript.src) || "").replace(/script\.js(\?.*)?$/, "");
 var RED = matchMedia("(prefers-reduced-motion: reduce)").matches;
 var HAS_IO = typeof IntersectionObserver === "function";
 var root = document.documentElement;
@@ -111,7 +113,7 @@ function applyLang(lang){
 function loadLang(lang, done){
   if (I18N[lang] || !LANGS[lang]) return done();
   var s = document.createElement("script");
-  s.src = "assets/lang/" + lang + ".js" + (ASSET_V ? "?v=" + ASSET_V : "");
+  s.src = BASE + "assets/lang/" + lang + ".js" + (ASSET_V ? "?v=" + ASSET_V : "");
   s.onload = function(){ if (window[LANGS[lang]]) I18N[lang] = window[LANGS[lang]]; done(); };
   s.onerror = function(){ done(); };
   document.head.appendChild(s);
