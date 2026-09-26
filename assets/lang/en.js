@@ -97,12 +97,17 @@ window.SITE_EN = {
   "ft.1":"Estetik · podiatrist, Aktobe","ft.2":"By appointment only. Information on this site does not replace a specialist's consultation.",
   "bar.tel":"Call",
 
-  "mn.primer":"Case study","ba.st1":"Without insoles","ba.st2":"With insoles",
-  "pr.k":"Case study","pr.t":"8 months - from fungus to clean nails",
+  "mn.primer":"Case studies","ba.st1":"Without insoles","ba.st2":"With insoles",
+  "pr.k":"Case studies","pr.t":"8 months - from fungus to clean nails",
   "pr.l":"The client came with fungal nail infection. A dermatologist led the treatment, and I did regular machine care of the nails. The result - after 8 months.",
   "pr.do":"Before: first visit","pr.posle":"After: 8 months","pr.m":"months","pr.derm":"Together with a dermatologist",
   "pr.s1":"Dermatologist - diagnosis and treatment","pr.s2":"Podiatrist - machine care of the nails","pr.s3":"Home care as advised",
   "pr.b":"Book a nail check",
+  "sens.t":"Medical photo","sens.s":"Tap to view",
+  "pr2.t":"Ingrown toenail in 3 visits","pr2.l":"Before Marianna, the patient had seen two podiatrists - with no result. Here the problem was solved in 3 visits together with a dermatologist.",
+  "pr2.do":"Before: after two podiatrists","pr2.posle":"After: 3 visits","pr2.m":"visits",
+  "pr2.s1":"Two podiatrists before - no result","pr2.s2":"Nail fold care and a corrective brace","pr2.s3":"Dermatologist - skin and nail treatment",
+  "pr2.b":"Book for an ingrown toenail",
   "mq.list":"Ingrown toenail|A brace instead of surgery|Orthopedic insoles|Nail fungus|Diabetic foot|Medical pedicure|Deep corns|Calluses|Warts|Free online consultation",
 
   "__wa":{

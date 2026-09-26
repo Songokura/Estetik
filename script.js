@@ -19,6 +19,29 @@ var HAS_IO = typeof IntersectionObserver === "function";
 var root = document.documentElement;
 root.classList.add("js");
 
+/* ---------------- ЧУВСТВИТЕЛЬНЫЕ ФОТО ----------------
+   .sens - снимок размыт, поверх плашка «Медицинское фото». Первый клик только открывает снимок:
+   слушатель на window в фазе захвата зарегистрирован раньше всех (и раньше LeadBot),
+   поэтому клик-раскрытие не считается обращением и не открывает плеер. */
+var EYE = '<svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>';
+document.querySelectorAll(".sens").forEach(function(el){
+  var o = document.createElement("span");
+  o.className = "sens-ov"; o.setAttribute("role", "button"); o.tabIndex = 0;
+  o.innerHTML = EYE + '<b data-i="sens.t">Медицинское фото</b><small data-i="sens.s">Нажмите, чтобы посмотреть</small>';
+  el.appendChild(o);
+});
+window.addEventListener("click", function(e){
+  var el = e.target.closest ? e.target.closest(".sens:not(.shown)") : null;
+  if (!el) return;
+  e.preventDefault(); e.stopImmediatePropagation();
+  el.classList.add("shown");
+}, true);
+document.addEventListener("keydown", function(e){
+  if ((e.key === "Enter" || e.key === " ") && e.target.classList && e.target.classList.contains("sens-ov")) {
+    e.preventDefault(); e.target.closest(".sens").classList.add("shown");
+  }
+});
+
 /* ---------------- КОНВЕРСИИ GOOGLE ADS (ярлыки задаст index.html позже) ---------------- */
 function conv(key){
   var id = (window.MP_CONV || {})[key];
@@ -412,6 +435,23 @@ function closeVideo(){
 vcards.forEach(function(c){ c.addEventListener("click", function(){ openVideo(c); }); });
 if (modal) modal.addEventListener("click", function(e){ if (e.target.closest("[data-vm-close]")) closeVideo(); });
 addEventListener("keydown", function(e){ if (e.key === "Escape") { closeMenu(); closeVideo(); } });
+
+/* ---------------- ПЕТЛИ В КАРТОЧКАХ УСЛУГ ---------------- */
+if (HAS_IO && !RED) {
+  var cio = new IntersectionObserver(function(es){
+    es.forEach(function(en){
+      var v = en.target.querySelector(".cloop"); if (!v) return;
+      if (en.isIntersecting) {
+        if (!v.getAttribute("src")) {
+          v.addEventListener("playing", function(){ en.target.classList.add("is-live"); });
+          v.setAttribute("src", v.getAttribute("data-loop"));
+        }
+        var pr = v.play(); if (pr && pr.catch) pr.catch(function(){});
+      } else { try { v.pause(); } catch(err){} }
+    });
+  }, {threshold:.5});
+  document.querySelectorAll(".cvid").forEach(function(c){ cio.observe(c); });
+}
 
 /* ---------------- КАРТА: грузим, когда контакты близко ---------------- */
 var mapFrame = document.querySelector("#map iframe[data-src]");
