@@ -28,7 +28,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="image" href="assets/hero.webp" fetchpriority="high">
 <link href="https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=20260926-1">
+<link rel="stylesheet" href="styles.css?v=20260926-2">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -71,6 +71,7 @@
   <symbol id="ic-tel" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></symbol>
   <symbol id="ic-tg" viewBox="0 0 24 24"><path fill="currentColor" d="M21.9 4.6 18.7 19.8c-.2 1-.9 1.3-1.8.8l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.2-8.3c.4-.4-.1-.6-.6-.2L6.1 13.3 1.2 11.8c-1.1-.3-1.1-1.1.2-1.6L20.5 3c.9-.3 1.7.2 1.4 1.6z"/></symbol>
   <symbol id="ic-play" viewBox="0 0 24 24"><path fill="currentColor" d="M8 5.5v13l11-6.5z"/></symbol>
+  <symbol id="ic-plus" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 5v14M5 12h14"/></symbol>
   <symbol id="ic-x" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 6l12 12M18 6 6 18"/></symbol>
   <symbol id="ic-chev" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m9 5 7 7-7 7"/></symbol>
   <symbol id="ic-pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></symbol>
@@ -117,6 +118,7 @@
     <a href="#vrosshiy" data-i="mn.vrosshiy">Вросший ноготь</a>
     <a href="#stelki" data-i="mn.stelki">Ортопедические стельки</a>
     <a href="#gribok" data-i="mn.gribok">Обработка при грибке</a>
+    <a href="#primer" data-i="mn.primer">Пример работы</a>
     <a href="#borodavki" data-i="mn.bor">Бородавки</a>
     <a href="#diabet" data-i="mn.diabet">Диабетическая стопа</a>
     <a href="#raboty" data-i="mn.raboty">Фото работ</a>
@@ -184,7 +186,7 @@
 <!-- ПЛИТА 2: ортопедические стельки -->
 <div class="pw" id="stelki">
   <section class="plate svc t-sand">
-    <div class="wrap svc-in">
+    <div class="wrap svc-in flip">
       <div class="txt">
         <p class="kicker" data-i="s2.k">Ортопедические стельки</p>
         <h2 class="h2" data-i="s2.t">Стельки по вашей стопе</h2>
@@ -199,8 +201,9 @@
           <span class="price"><b data-i="s.price">от 15 000 тг</b><small data-i="s.price2">точно - после осмотра</small></span>
         </div>
       </div>
-      <div class="ph fr">
-        <img src="assets/p-stelki.webp" width="1200" height="900" alt="Стопы на подоскопе: видны зоны давления" loading="lazy" decoding="async">
+      <div class="ph fr ba bv">
+        <figure class="ba-i"><img src="assets/ba-st-bez.webp" width="1000" height="425" alt="Пятки без стелек: стопа заваливается внутрь" loading="lazy" decoding="async"><figcaption data-i="ba.st1">Без стелек</figcaption></figure>
+        <figure class="ba-i ba-after"><img src="assets/ba-st-v.webp" width="1000" height="425" alt="Те же пятки в ортопедических стельках: стоят ровно" loading="lazy" decoding="async"><figcaption data-i="ba.st2">В стельках</figcaption></figure>
       </div>
     </div>
   </section>
@@ -232,10 +235,49 @@
   </section>
 </div>
 
+<!-- ПРИМЕР РАБОТЫ: грибок, 8 месяцев с дерматологом -->
+<section class="sec case" id="primer">
+  <div class="wrap">
+    <div class="head rv">
+      <p class="kicker" data-i="pr.k">Пример работы</p>
+      <h2 class="h2" data-i="pr.t">8 месяцев - от грибка к чистым ногтям</h2>
+      <p class="lead" data-i="pr.l">Клиент пришёл с грибковым поражением ногтей. Лечение вёл врач-дерматолог, я - регулярную аппаратную обработку ногтей. Результат - через 8 месяцев.</p>
+    </div>
+    <div class="case-grid">
+      <div class="case-col rv">
+        <button class="vcard vplay case-card" type="button" data-video="assets/video/gribok-do-posle.mp4" data-title="pr.do">
+          <img src="assets/k-gribok-do.webp" width="540" height="720" alt="Ногти, поражённые грибком, на первом приёме" loading="lazy" decoding="async">
+          <video class="loop" muted playsinline loop preload="none" data-loop="assets/video/loop-gribok.mp4" aria-hidden="true"></video>
+          <span class="case-tag" data-i="pr.do">До: первый приём</span>
+          <span class="vplay-ic"><svg width="22" height="22"><use href="#ic-play"/></svg></span>
+        </button>
+      </div>
+      <div class="case-mid rv">
+        <span class="case-months"><b>8</b><span data-i="pr.m">месяцев</span></span>
+        <span class="case-derm"><svg width="18" height="18"><use href="#ic-plus"/></svg><span data-i="pr.derm">Совместно с врачом-дерматологом</span></span>
+        <ul class="case-steps">
+          <li data-i="pr.s1">Дерматолог - диагноз и лечение</li>
+          <li data-i="pr.s2">Подолог - аппаратная обработка ногтей</li>
+          <li data-i="pr.s3">Уход дома по рекомендациям</li>
+        </ul>
+      </div>
+      <div class="case-col rv">
+        <figure class="case-card case-after">
+          <img src="assets/k-gribok-posle.webp" width="720" height="960" alt="Те же ногти через 8 месяцев: чистые и ровные" loading="lazy" decoding="async">
+          <figcaption class="case-tag dark" data-i="pr.posle">После: 8 месяцев</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="btns rv case-btns">
+      <a class="btn wa" href="https://wa.me/77056044869" data-wa="gribok" target="_blank" rel="noopener"><svg width="18" height="18"><use href="#ic-wa"/></svg><span data-i="pr.b">Записаться на осмотр ногтей</span></a>
+    </div>
+  </div>
+</section>
+
 <!-- ПЛИТА: бородавки -->
 <div class="pw" id="borodavki">
   <section class="plate svc t-sand">
-    <div class="wrap svc-in">
+    <div class="wrap svc-in flip">
       <div class="txt">
         <p class="kicker" data-i="s5.k">Бородавки</p>
         <h2 class="h2" data-i="s5.t">Бородавки на стопах и руках</h2>
@@ -341,20 +383,6 @@
           </button>
         </li>
         <li>
-          <button class="vcard vplay" type="button" data-video="assets/video/stelki-effekt.mp4" data-title="v.c7">
-            <img src="assets/v-stelki-effekt.webp" width="480" height="640" alt="Стопы без стелек и в ортопедических стельках на подоскопе" loading="lazy" decoding="async">
-            <span class="vcap"><b data-i="v.c7">Стопа без стелек и в стельках</b><small data-i="v.c7s">20 с · пятка встаёт ровно</small></span>
-            <span class="vplay-ic"><svg width="22" height="22"><use href="#ic-play"/></svg></span>
-          </button>
-        </li>
-        <li>
-          <button class="vcard vplay" type="button" data-video="assets/video/gribok-do-posle.mp4" data-title="v.c8">
-            <img src="assets/v-gribok.webp" width="480" height="640" alt="Ногти при грибке до и после обработки" loading="lazy" decoding="async">
-            <span class="vcap"><b data-i="v.c8">Грибок: до и после</b><small data-i="v.c8s">71 с · аппаратная зачистка</small></span>
-            <span class="vplay-ic"><svg width="22" height="22"><use href="#ic-play"/></svg></span>
-          </button>
-        </li>
-        <li>
           <button class="vcard vplay" type="button" data-video="assets/video/mozol.mp4" data-title="v.c9">
             <img src="assets/v-mozol.webp" width="480" height="640" alt="Удаление мозоли на стопе" loading="lazy" decoding="async">
             <span class="vcap"><b data-i="v.c9">Удаление мозоли</b><small data-i="v.c9s">68 с · крупный план</small></span>
@@ -422,7 +450,7 @@
         <span class="cbody"><b data-i="u.c3">Обработка ногтей при грибке</b><span data-i="u.c3s">Аппаратная зачистка поражённых слоёв</span></span>
       </a>
       <a class="card rv" id="pedikyur" href="https://wa.me/77056044869" data-wa="pedikyur" target="_blank" rel="noopener">
-        <span class="cimg"><img src="assets/c-pedikyur2.webp" width="720" height="540" alt="Ухоженные стопы после медицинского педикюра" loading="lazy" decoding="async"></span>
+        <span class="cimg"><img src="assets/c-pedikyur3.webp" width="800" height="600" alt="Аппаратная и ручная обработка стопы на медицинском педикюре" loading="lazy" decoding="async"></span>
         <span class="cbody"><b data-i="u.c4">Медицинский педикюр</b><span data-i="u.c4s">Аппаратная обработка стоп и ногтей, стерильно</span><em class="clink"><svg width="14" height="14"><use href="#ic-wa"/></svg><i data-i="s.book">Записаться</i></em></span>
       </a>
       <a class="card rv" id="stopy" href="https://wa.me/77056044869" data-wa="stopy" target="_blank" rel="noopener">
@@ -565,6 +593,6 @@
   </div>
 </div>
 
-<script src="script.js?v=20260926-1"></script>
+<script src="script.js?v=20260926-2"></script>
 </body>
 </html>
