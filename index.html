@@ -28,7 +28,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="image" href="assets/hero.webp" fetchpriority="high">
 <link href="https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=20260926-4">
+<link rel="stylesheet" href="styles.css?v=20260926-5">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -280,7 +280,7 @@
     <div class="case-grid">
       <div class="case-col rv">
         <figure class="case-card sens">
-          <img src="assets/k-vr-do.webp" width="720" height="960" alt="Вросший ноготь с утолщённым краем на первом приёме" loading="lazy" decoding="async">
+          <img src="assets/k-vr-posle.webp" width="720" height="960" alt="Вросший ноготь со скобой на приёме" loading="lazy" decoding="async">
           <figcaption class="case-tag" data-i="pr2.do">До: после двух подологов</figcaption>
         </figure>
       </div>
@@ -295,7 +295,7 @@
       </div>
       <div class="case-col rv">
         <figure class="case-card case-after">
-          <img src="assets/k-vr-posle.webp" width="720" height="960" alt="Тот же ноготь со скобой: край выведен, валик спокойный" loading="lazy" decoding="async">
+          <img src="assets/k-vr-do.webp" width="720" height="960" alt="Тот же ноготь после 3 посещений: край ровный, валик спокойный" loading="lazy" decoding="async">
           <figcaption class="case-tag dark" data-i="pr2.posle">После: 3 посещения</figcaption>
         </figure>
       </div>
@@ -351,8 +351,10 @@
           <span class="price"><b data-i="s.price">от 15 000 тг</b><small data-i="s.price2">точно - после осмотра</small></span>
         </div>
       </div>
-      <div class="ph fr">
+      <div class="ph fr cvid">
         <img src="assets/p-diabet.webp" width="800" height="600" alt="Ортопед примеряет ортопедическую обувь при диабетической стопе" loading="lazy" decoding="async">
+        <video class="cloop" muted playsinline loop preload="none" data-loop="assets/video/loop-diabet.mp4" aria-hidden="true"></video>
+        <button class="vplay ph-play" type="button" data-video="assets/video/diabet-obuv.mp4" data-title="v.c6"><svg width="18" height="18"><use href="#ic-play"/></svg><span data-i="s4.v">Смотреть видео</span></button>
       </div>
     </div>
   </section>
@@ -404,13 +406,6 @@
           <button class="vcard vplay" type="button" data-video="assets/video/slepok.mp4" data-wide="1" data-title="v.c5">
             <img src="assets/v-slepok.webp" width="480" height="640" alt="Слепок стопы в пенном боксе для изготовления стелек" loading="lazy" decoding="async">
             <span class="vcap"><b data-i="v.c5">Слепок стопы для стелек</b><small data-i="v.c5s">53 с · снятие мерки</small></span>
-            <span class="vplay-ic"><svg width="22" height="22"><use href="#ic-play"/></svg></span>
-          </button>
-        </li>
-        <li>
-          <button class="vcard vplay" type="button" data-video="assets/video/diabet-obuv.mp4" data-title="v.c6">
-            <img src="assets/v-diabet.webp" width="480" height="640" alt="Ортопед подбирает обувь при диабетической стопе" loading="lazy" decoding="async">
-            <span class="vcap"><b data-i="v.c6">Обувь при диабетической стопе</b><small data-i="v.c6s">40 с · примерка с ортопедом</small></span>
             <span class="vplay-ic"><svg width="22" height="22"><use href="#ic-play"/></svg></span>
           </button>
         </li>
@@ -622,6 +617,6 @@
   </div>
 </div>
 
-<script src="script.js?v=20260926-4"></script>
+<script src="script.js?v=20260926-5"></script>
 </body>
 </html>

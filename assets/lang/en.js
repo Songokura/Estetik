@@ -108,6 +108,7 @@ window.SITE_EN = {
   "pr2.do":"Before: after two podiatrists","pr2.posle":"After: 3 visits","pr2.m":"visits",
   "pr2.s1":"Two podiatrists before - no result","pr2.s2":"Nail fold care and a corrective brace","pr2.s3":"Dermatologist - skin and nail treatment",
   "pr2.b":"Book for an ingrown toenail",
+  "s4.v":"Watch the video",
   "mq.list":"Ingrown toenail|A brace instead of surgery|Orthopedic insoles|Nail fungus|Diabetic foot|Medical pedicure|Deep corns|Calluses|Warts|Free online consultation",
 
   "__wa":{
