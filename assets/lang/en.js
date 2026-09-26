@@ -1,0 +1,114 @@
+/* Английский словарь Эстетик. Грузится только по выбору EN или ?lang=en. */
+window.SITE_EN = {
+  "m.title":"Podiatrist in Aktobe - Estetik: ingrown toenails, nail fungus, orthopedic insoles",
+  "m.desc":"Podiatrist Marianna, Aktobe: ingrown toenail correction with a brace, no nail removal; nail care for fungus; orthopedic insoles; medical pedicure; calluses, corns and warts. 8 years of practice, 1000+ clients. Visits from 15,000 KZT, free online consultation by photo.",
+  "m.ogt":"Podiatrist in Aktobe - Estetik",
+  "m.ogd":"Ingrown toenails without removal, nail care for fungus, orthopedic insoles, medical pedicure. 8 years of practice. Free online consultation by photo.",
+
+  "logo.sub":"podiatry · pedicure · health",
+  "nav.uslugi":"Services","nav.video":"Video","nav.kak":"How it works","nav.obo":"About me","nav.kont":"Contacts",
+  "mn.vrosshiy":"Ingrown toenail","mn.stelki":"Orthopedic insoles","mn.gribok":"Nail fungus care","mn.bor":"Warts",
+  "mn.diabet":"Diabetic foot","mn.raboty":"Work photos","mn.uslugi":"All services and prices",
+
+  "h.kicker":"Aktobe · podiatrist · 8 years of practice",
+  "h.t1":"Ingrown toenail -","h.t2":"corrected, not removed",
+  "h.lead":"8 years of practice, 1000+ clients. A brace instead of surgery, nail care for fungus, orthopedic insoles, medical pedicure. Visits from 15,000 KZT, online consultation by photo is free.",
+  "h.b1":"Book on WhatsApp","h.b2":"Services and prices","h.ig":"Work and process on Instagram",
+
+  "s.book":"Book","s.price":"from 15,000 KZT","s.price2":"exact price after the exam",
+  "ba.do":"Before","ba.posle":"After","ba.vr":"After correction",
+
+  "s1.k":"Ingrown toenail correction","s1.t":"A brace instead of surgery",
+  "s1.l":"I relieve pain and inflammation on the first visit and fit a corrective brace: the nail stays in place and grows the right way.",
+  "s1.b1":"No nail removal","s1.b2":"Follow-up after the procedure","s1.b3":"Step by step and gentle",
+
+  "s2.k":"Orthopedic insoles","s2.t":"Insoles made for your feet",
+  "s2.l":"Extra weight, pregnancy, foot deformities and even ingrown nails change how you load your feet when walking. An orthopedic insole corrects it and supports the foot.",
+  "s2.b1":"Diagnostics on a podoscope","s2.b2":"Custom insoles together with orthopedists from Moscow","s2.b3":"For flat feet and bunions",
+
+  "s3.k":"Nails affected by fungus","s3.t":"Machine cleaning of nails",
+  "s3.l":"I remove the affected layers with a drill: the nail becomes thinner and smoother, and the treatment prescribed by your doctor starts to work.",
+  "s3.b1":"Sterile single-use tools","s3.b2":"Gentle, no damage to the skin","s3.b3":"Home care advice",
+
+  "s5.k":"Warts","s5.t":"Warts on feet and hands",
+  "s5.l":"Plantar warts, warts on toes and hands. I treat them gently, step by step and without pain - you can walk right after the procedure.",
+  "s5.b1":"Plantar and on the toes","s5.b2":"Warts on hands","s5.b3":"A dermatologist's opinion if needed",
+
+  "s4.k":"Diabetic foot","s4.t":"Diabetic feet can't wait",
+  "s4.l":"With diabetes, an untreated small wound, an ingrown nail or inflammation can lead to serious complications. In neglected cases infection reaches gangrene and toe amputation.",
+  "s4.b1":"Regular foot checks","s4.b2":"Gentle nail and skin care","s4.b3":"Footwear and insoles with an orthopedist","s4.b4":"Referral to an endocrinologist or vascular surgeon",
+
+  "v.k":"Video from the clinic","v.t":"What it really looks like",
+  "v.l":"Real footage from the room. A clip starts on its own when it comes into view; click for the full version with sound.",
+  "v.c1":"Nail care with a drill","v.c1s":"14 s · no captions",
+  "v.c2":"Ingrown toenail correction","v.c2s":"23 s · step by step",
+  "v.c3":"\"I thought you'd pull the nail out\"","v.c3s":"68 s · full procedure",
+  "v.c4":"Custom insoles","v.c4s":"21 s · finished pair",
+  "v.c5":"Foot impression for insoles","v.c5s":"53 s · taking measurements",
+  "v.c6":"Shoes for a diabetic foot","v.c6s":"40 s · fitting with an orthopedist",
+  "v.c7":"Feet without and with insoles","v.c7s":"20 s · the heel stands straight",
+  "v.c8":"Fungus: before and after","v.c8s":"71 s · machine cleaning",
+  "v.c9":"Callus removal","v.c9s":"68 s · close-up",
+  "v.ig":"More work on Instagram",
+
+  "g.k":"Work photos","g.t":"From the clinic, no filters",
+  "g.l":"Warts, ingrown nails, fungus, foot diagnostics and insoles - real client cases.",
+  "g.1":"Wart on a toe","g.2":"Plantar warts","g.3":"Warts during treatment","g.4":"Foot after treatment",
+  "g.5":"Painless wart treatment","g.6":"Inflamed ingrown toenail","g.7":"Corrective brace","g.8":"Brace on an ingrown nail",
+  "g.9":"Nail affected by fungus","g.10":"Podoscope diagnostics","g.11":"Footprint on a podoscope","g.12":"Tape to offload the foot",
+  "g.13":"Foot cast with an orthopedist",
+
+  "u.k":"Services and prices","u.t":"What people come to a podiatrist with",
+  "u.l":"Visits from 15,000 KZT, the exact price after the exam. Online consultation by photo on WhatsApp is free.",
+  "u.c1":"Ingrown toenail correction","u.c1s":"Brace, packing, nail fold care - no removal",
+  "u.c2":"Orthopedic insoles","u.c2s":"Podoscope exam, made to your measurements",
+  "u.c3":"Nail care for fungus","u.c3s":"Machine removal of affected layers",
+  "u.c4":"Medical pedicure","u.c4s":"Machine care of feet and nails, sterile",
+  "u.c5":"Foot care","u.c5s":"Calluses, corns, cracked heels",
+  "u.g0":"Free","u.g1":"Online consultation by photo",
+  "u.g2":"Send a photo of the problem on WhatsApp: I'll tell you what to do and what it costs.","u.g3":"Send a photo",
+
+  "k.k":"How it works","k.t":"Four steps to the result",
+  "k.l":"Caring for your feet today is an investment in your musculoskeletal health for years to come.",
+  "k.s1":"Photo or call","k.s1s":"Message me on WhatsApp with a photo. I'll tell you what to do and when to come.",
+  "k.s2":"Exam and podoscope","k.s2s":"I check the foot, the nail and how the load is distributed, and explain the cause.",
+  "k.s3":"Procedure","k.s3s":"Step by step and gentle, with sterile tools. Usually in one visit.",
+  "k.s4":"Follow-up and advice","k.s4s":"I give you a home care plan and book a check-up. We see it through.",
+
+  "a.tag":"Aktobe, Estetik salon","a.k":"About me","a.t":"Marianna, podiatrist",
+  "a.q":"\"For me, the result matters more than the money. I ask one thing: listen and follow the advice - then we see it through to the end.\"",
+  "a.f1":"years in podiatry","a.f2":"happy clients","a.f3":"always learning: courses, practice, case reviews",
+  "a.d1":"I work together with doctors",
+  "a.d2":"I cooperate with orthopedists from Moscow and doctors of different fields. If you need a doctor, I'll refer you to a trusted specialist and we'll take care of you together:",
+  "a.v1":"Dermatologist","a.v2":"Surgeon","a.v3":"Vascular surgeon","a.v4":"Immunologist","a.v5":"Gastroenterologist","a.v6":"Endocrinologist",
+  "a.b":"Message Marianna",
+
+  "f.k":"Questions","f.t":"What people ask before booking",
+  "f.q1":"Does fitting a brace hurt?","f.a1":"The procedure is easy to bear: first I treat the nail fold and relieve the inflammation, then I fit the brace on the nail. You walk home on your own.",
+  "f.q2":"Does the nail need to be removed?","f.a2":"In most cases no: a brace and proper care let you keep the nail. I decide after the exam.",
+  "f.q3":"How much is a visit?","f.a3":"From 15,000 KZT. I give the exact price after the exam or a free online consultation by photo.",
+  "f.q4":"How should I prepare?","f.a4":"Don't cut anything yourself and don't soak your feet. Wear comfortable shoes that don't squeeze your toes.",
+  "f.q5":"I have diabetes - can I come?","f.a5":"Yes, and don't put it off: with diabetes a small wound, an ingrown nail or inflammation should be treated in time. I work gently and involve a doctor if needed.",
+  "f.q6":"Do you remove warts?","f.a6":"Yes, plantar warts, warts on toes and on hands. First an exam: if you need a dermatologist, I'll tell you who to see.",
+
+  "c.k":"Contacts","c.t":"Book a visit",
+  "c.l":"Call or message on WhatsApp: I'll tell you what to do and find a time.",
+  "c.addr":"Aktobe, 158B Eset Batyr St., Estetik salon","c.hours":"Daily 10:00-20:00, by appointment","c.yandex":"Yandex Maps",
+  "ft.1":"Estetik · podiatrist, Aktobe","ft.2":"By appointment only. Information on this site does not replace a specialist's consultation.",
+  "bar.tel":"Call",
+
+  "mq.list":"Ingrown toenail|A brace instead of surgery|Orthopedic insoles|Nail fungus|Diabetic foot|Medical pedicure|Deep corns|Calluses|Warts|Free online consultation",
+
+  "__wa":{
+    hero:"Hello! I'm writing from the Estetik website. I'd like to book a visit. Problem: ",
+    vrosshiy:"Hello! I'm writing from the Estetik website.\nService: ingrown toenail correction.\nI'd like to book. Convenient time: ",
+    stelki:"Hello! I'm writing from the Estetik website.\nService: orthopedic insoles.\nI'd like to book a diagnostic visit. Convenient time: ",
+    gribok:"Hello! I'm writing from the Estetik website.\nService: nail care for fungus.\nI'd like to book. Convenient time: ",
+    borodavki:"Hello! I'm writing from the Estetik website.\nService: wart removal.\nI'd like to book. Convenient time: ",
+    diabet:"Hello! I'm writing from the Estetik website.\nService: diabetic foot care.\nI'd like to book. Convenient time: ",
+    pedikyur:"Hello! I'm writing from the Estetik website.\nService: medical pedicure.\nI'd like to book. Convenient time: ",
+    stopy:"Hello! I'm writing from the Estetik website.\nService: foot care (calluses, corns, cracked heels).\nI'd like to book. Convenient time: ",
+    online:"Hello! I'd like a free online consultation by photo. Sending a photo of the problem:",
+    kontakty:"Hello! I'm writing from the Estetik website. Question: "
+  }
+};

@@ -41,12 +41,13 @@ var WA_RU = {
   gribok:   "Здравствуйте! Пишу с сайта «Эстетик».\nУслуга: обработка ногтей при грибке.\nХочу записаться. Удобное время: ",
   diabet:   "Здравствуйте! Пишу с сайта «Эстетик».\nУслуга: уход за стопами при диабете.\nХочу записаться. Удобное время: ",
   pedikyur: "Здравствуйте! Пишу с сайта «Эстетик».\nУслуга: медицинский педикюр.\nХочу записаться. Удобное время: ",
-  stopy:    "Здравствуйте! Пишу с сайта «Эстетик».\nУслуга: обработка стоп (натоптыши, мозоли, бородавки).\nХочу записаться. Удобное время: ",
+  stopy:    "Здравствуйте! Пишу с сайта «Эстетик».\nУслуга: обработка стоп (натоптыши, мозоли, трещины).\nХочу записаться. Удобное время: ",
+  borodavki:"Здравствуйте! Пишу с сайта «Эстетик».\nУслуга: удаление бородавок.\nХочу записаться. Удобное время: ",
   online:   "Здравствуйте! Хочу бесплатную онлайн-консультацию по фото. Отправляю фото проблемы:",
   kontakty: "Здравствуйте! Пишу с сайта «Эстетик». Вопрос: "
 };
 function setWaLinks(lang){
-  var T = (lang === "kk" && window.SITE_KK && window.SITE_KK.__wa) ? window.SITE_KK.__wa : WA_RU;
+  var T = (I18N[lang] && I18N[lang].__wa) ? I18N[lang].__wa : WA_RU;
   document.querySelectorAll("[data-wa]").forEach(function(a){
     var t = T[a.dataset.wa] || WA_RU[a.dataset.wa] || WA_RU.hero;
     a.href = "https://wa.me/" + WA + "?text=" + encodeURIComponent(t);
@@ -55,8 +56,9 @@ function setWaLinks(lang){
 }
 
 /* ---------------- ЯЗЫК ----------------
-   Русский - в разметке (снимок в RU), казахский - assets/lang/kk.js по кнопке KZ,
-   ?lang=kk или сохранённому выбору. По navigator.language не угадываем. */
+   Русский - в разметке (снимок в RU), казахский и английский - assets/lang/kk.js и en.js
+   по кнопке, ?lang= или сохранённому выбору. По navigator.language не угадываем. */
+var LANGS = {kk: "SITE_KK", en: "SITE_EN"};
 var RU_MQ = "Вросший ноготь|Скоба вместо хирургии|Ортопедические стельки|Грибок ногтей|Диабетическая стопа|Медицинский педикюр|Стержневая мозоль|Натоптыши|Бородавки|Онлайн-консультация в подарок";
 var I18N = {}, RU = {};
 function curLang(){ return root.getAttribute("lang") || "ru"; }
@@ -84,15 +86,15 @@ function applyLang(lang){
   fitText();
 }
 function loadLang(lang, done){
-  if (I18N[lang] || lang !== "kk") return done();
+  if (I18N[lang] || !LANGS[lang]) return done();
   var s = document.createElement("script");
-  s.src = "assets/lang/kk.js" + (ASSET_V ? "?v=" + ASSET_V : "");
-  s.onload = function(){ if (window.SITE_KK) I18N.kk = window.SITE_KK; done(); };
+  s.src = "assets/lang/" + lang + ".js" + (ASSET_V ? "?v=" + ASSET_V : "");
+  s.onload = function(){ if (window[LANGS[lang]]) I18N[lang] = window[LANGS[lang]]; done(); };
   s.onerror = function(){ done(); };
   document.head.appendChild(s);
 }
 function setLang(lang){
-  if (lang !== "kk") lang = "ru";
+  if (!LANGS[lang]) lang = "ru";
   loadLang(lang, function(){ applyLang((I18N[lang] || lang === "ru") ? lang : "ru"); });
 }
 document.querySelectorAll(".lang button").forEach(function(b){ b.addEventListener("click", function(){ setLang(b.dataset.lang); }); });
@@ -100,7 +102,7 @@ function initLang(){
   var q = new URLSearchParams(location.search).get("lang"), saved = null;
   try { saved = localStorage.getItem("mp-lang"); } catch(e){}
   var L = q || saved || "ru";
-  if (L === "kk") setLang("kk"); else { setWaLinks("ru"); buildMarquee(RU_MQ); }
+  if (LANGS[L]) setLang(L); else { setWaLinks("ru"); buildMarquee(RU_MQ); }
 }
 
 /* ---------------- БЕГУЩАЯ СТРОКА (две копии, цикл в одну копию) ---------------- */

@@ -28,7 +28,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="image" href="assets/hero.webp" fetchpriority="high">
 <link href="https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=20260925-9">
+<link rel="stylesheet" href="styles.css?v=20260926-1">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -103,6 +103,7 @@
       <div class="lang" role="group" aria-label="Язык сайта">
         <button type="button" data-lang="ru" class="is-active" aria-pressed="true" lang="ru">RU</button>
         <button type="button" data-lang="kk" aria-pressed="false">KZ</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
       </div>
       <a class="ig-round" href="https://www.instagram.com/podolog.marianna.aktobe/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="20" height="20"><use href="#ic-ig"/></svg></a>
       <a class="call" href="tel:+77056044869"><svg width="18" height="18"><use href="#ic-tel"/></svg><span>+7 705 604 48 69</span></a>
@@ -116,7 +117,9 @@
     <a href="#vrosshiy" data-i="mn.vrosshiy">Вросший ноготь</a>
     <a href="#stelki" data-i="mn.stelki">Ортопедические стельки</a>
     <a href="#gribok" data-i="mn.gribok">Обработка при грибке</a>
+    <a href="#borodavki" data-i="mn.bor">Бородавки</a>
     <a href="#diabet" data-i="mn.diabet">Диабетическая стопа</a>
+    <a href="#raboty" data-i="mn.raboty">Фото работ</a>
     <a href="#uslugi" data-i="mn.uslugi">Все услуги и цены</a>
     <a href="#video" data-i="nav.video">Видео</a>
     <a href="#kak" data-i="nav.kak">Как проходит</a>
@@ -229,6 +232,32 @@
   </section>
 </div>
 
+<!-- ПЛИТА: бородавки -->
+<div class="pw" id="borodavki">
+  <section class="plate svc t-sand">
+    <div class="wrap svc-in">
+      <div class="txt">
+        <p class="kicker" data-i="s5.k">Бородавки</p>
+        <h2 class="h2" data-i="s5.t">Бородавки на стопах и руках</h2>
+        <p class="lead" data-i="s5.l">Подошвенные бородавки, на пальцах и на руках. Обрабатываю бережно и поэтапно, без боли - ходить после процедуры можно сразу.</p>
+        <ul class="ticks">
+          <li data-i="s5.b1">Подошвенные и на пальцах ног</li>
+          <li data-i="s5.b2">Бородавки на руках</li>
+          <li data-i="s5.b3">При необходимости - консультация дерматолога</li>
+        </ul>
+        <div class="btns">
+          <a class="btn wa" href="https://wa.me/77056044869" data-wa="borodavki" target="_blank" rel="noopener"><svg width="18" height="18"><use href="#ic-wa"/></svg><span data-i="s.book">Записаться</span></a>
+          <span class="price"><b data-i="s.price">от 15 000 тг</b><small data-i="s.price2">точно - после осмотра</small></span>
+        </div>
+      </div>
+      <div class="ph fr ba">
+        <figure class="ba-i"><img src="assets/ba-bor-do.webp" width="540" height="904" alt="Бородавки на руке до обработки" loading="lazy" decoding="async"><figcaption data-i="ba.do">До</figcaption></figure>
+        <figure class="ba-i ba-after"><img src="assets/ba-bor-posle.webp" width="540" height="904" alt="Та же рука после обработки: кожа чистая" loading="lazy" decoding="async"><figcaption data-i="ba.posle">После</figcaption></figure>
+      </div>
+    </div>
+  </section>
+</div>
+
 <!-- ПЛИТА 4: диабетическая стопа -->
 <div class="pw" id="diabet">
   <section class="plate svc t-rose">
@@ -311,11 +340,62 @@
             <span class="vplay-ic"><svg width="22" height="22"><use href="#ic-play"/></svg></span>
           </button>
         </li>
+        <li>
+          <button class="vcard vplay" type="button" data-video="assets/video/stelki-effekt.mp4" data-title="v.c7">
+            <img src="assets/v-stelki-effekt.webp" width="480" height="640" alt="Стопы без стелек и в ортопедических стельках на подоскопе" loading="lazy" decoding="async">
+            <span class="vcap"><b data-i="v.c7">Стопа без стелек и в стельках</b><small data-i="v.c7s">20 с · пятка встаёт ровно</small></span>
+            <span class="vplay-ic"><svg width="22" height="22"><use href="#ic-play"/></svg></span>
+          </button>
+        </li>
+        <li>
+          <button class="vcard vplay" type="button" data-video="assets/video/gribok-do-posle.mp4" data-title="v.c8">
+            <img src="assets/v-gribok.webp" width="480" height="640" alt="Ногти при грибке до и после обработки" loading="lazy" decoding="async">
+            <span class="vcap"><b data-i="v.c8">Грибок: до и после</b><small data-i="v.c8s">71 с · аппаратная зачистка</small></span>
+            <span class="vplay-ic"><svg width="22" height="22"><use href="#ic-play"/></svg></span>
+          </button>
+        </li>
+        <li>
+          <button class="vcard vplay" type="button" data-video="assets/video/mozol.mp4" data-title="v.c9">
+            <img src="assets/v-mozol.webp" width="480" height="640" alt="Удаление мозоли на стопе" loading="lazy" decoding="async">
+            <span class="vcap"><b data-i="v.c9">Удаление мозоли</b><small data-i="v.c9s">68 с · крупный план</small></span>
+            <span class="vplay-ic"><svg width="22" height="22"><use href="#ic-play"/></svg></span>
+          </button>
+        </li>
       </ul>
     </div>
     <div class="igrow rv">
       <a class="btn ghost" href="https://www.instagram.com/podolog.marianna.aktobe/" target="_blank" rel="noopener"><svg width="18" height="18"><use href="#ic-ig"/></svg><span data-i="v.ig">Больше работ в Instagram</span></a>
       <span class="nick">@podolog.marianna.aktobe</span>
+    </div>
+  </div>
+</section>
+
+<!-- ФОТО РАБОТ -->
+<section class="sec sand" id="raboty">
+  <div class="wrap">
+    <div class="head rv">
+      <p class="kicker" data-i="g.k">Фото работ</p>
+      <h2 class="h2" data-i="g.t">Из кабинета, без фильтров</h2>
+      <p class="lead" data-i="g.l">Бородавки, вросшие ногти, грибок, диагностика стоп и стельки - реальные случаи клиентов.</p>
+    </div>
+    <div class="track-wrap rv">
+      <button class="arr prev" type="button" data-prev="#gtrack" aria-label="Назад"><svg width="20" height="20"><use href="#ic-chev"/></svg></button>
+      <button class="arr next" type="button" data-next="#gtrack" aria-label="Вперёд"><svg width="20" height="20"><use href="#ic-chev"/></svg></button>
+      <ul class="track gtrack" id="gtrack" tabindex="0">
+        <li><figure class="gcard"><img src="assets/g-bor-palec.webp" width="720" height="960" alt="Бородавка на пальце" loading="lazy" decoding="async"><figcaption data-i="g.1">Бородавка на пальце</figcaption></figure></li>
+        <li><figure class="gcard"><img src="assets/g-bor-podosh.webp" width="720" height="960" alt="Подошвенные бородавки" loading="lazy" decoding="async"><figcaption data-i="g.2">Подошвенные бородавки</figcaption></figure></li>
+        <li><figure class="gcard"><img src="assets/g-bor-obr.webp" width="720" height="960" alt="Бородавки во время обработки" loading="lazy" decoding="async"><figcaption data-i="g.3">Бородавки во время обработки</figcaption></figure></li>
+        <li><figure class="gcard"><img src="assets/g-bor-posle.webp" width="720" height="960" alt="Стопа после обработки" loading="lazy" decoding="async"><figcaption data-i="g.4">Стопа после обработки</figcaption></figure></li>
+        <li><figure class="gcard"><img src="assets/g-bor-kollazh.webp" width="720" height="960" alt="Безболезненная обработка бородавки" loading="lazy" decoding="async"><figcaption data-i="g.5">Безболезненная обработка бородавки</figcaption></figure></li>
+        <li><figure class="gcard"><img src="assets/g-vr-vospal.webp" width="720" height="960" alt="Вросший ноготь с воспалением" loading="lazy" decoding="async"><figcaption data-i="g.6">Вросший ноготь с воспалением</figcaption></figure></li>
+        <li><figure class="gcard"><img src="assets/g-skoba1.webp" width="720" height="960" alt="Корректирующая скоба" loading="lazy" decoding="async"><figcaption data-i="g.7">Корректирующая скоба</figcaption></figure></li>
+        <li><figure class="gcard"><img src="assets/g-skoba2.webp" width="720" height="960" alt="Скоба на вросшем ногте" loading="lazy" decoding="async"><figcaption data-i="g.8">Скоба на вросшем ногте</figcaption></figure></li>
+        <li><figure class="gcard"><img src="assets/g-gribok.webp" width="720" height="960" alt="Ноготь при грибке" loading="lazy" decoding="async"><figcaption data-i="g.9">Ноготь при грибке</figcaption></figure></li>
+        <li><figure class="gcard"><img src="assets/g-podoskop.webp" width="720" height="960" alt="Диагностика на подоскопе" loading="lazy" decoding="async"><figcaption data-i="g.10">Диагностика на подоскопе</figcaption></figure></li>
+        <li><figure class="gcard"><img src="assets/g-podoskop2.webp" width="720" height="960" alt="Отпечаток стоп на подоскопе" loading="lazy" decoding="async"><figcaption data-i="g.11">Отпечаток стоп на подоскопе</figcaption></figure></li>
+        <li><figure class="gcard"><img src="assets/g-teip.webp" width="720" height="960" alt="Тейп для разгрузки стопы" loading="lazy" decoding="async"><figcaption data-i="g.12">Тейп для разгрузки стопы</figcaption></figure></li>
+        <li><figure class="gcard"><img src="assets/g-slepok.webp" width="720" height="960" alt="Слепок стопы вместе с ортопедом" loading="lazy" decoding="async"><figcaption data-i="g.13">Слепок стопы вместе с ортопедом</figcaption></figure></li>
+      </ul>
     </div>
   </div>
 </section>
@@ -347,7 +427,7 @@
       </a>
       <a class="card rv" id="stopy" href="https://wa.me/77056044869" data-wa="stopy" target="_blank" rel="noopener">
         <span class="cimg"><img src="assets/c-stopy2.webp" width="800" height="600" alt="Разгрузочная подушечка на стопе при мозоли" loading="lazy" decoding="async"></span>
-        <span class="cbody"><b data-i="u.c5">Обработка стоп</b><span data-i="u.c5s">Натоптыши, стержневые мозоли, бородавки, трещины</span><em class="clink"><svg width="14" height="14"><use href="#ic-wa"/></svg><i data-i="s.book">Записаться</i></em></span>
+        <span class="cbody"><b data-i="u.c5">Обработка стоп</b><span data-i="u.c5s">Натоптыши, стержневые мозоли, трещины</span><em class="clink"><svg width="14" height="14"><use href="#ic-wa"/></svg><i data-i="s.book">Записаться</i></em></span>
       </a>
       <a class="card gift rv" id="online" href="https://wa.me/77056044869" data-wa="online" target="_blank" rel="noopener">
         <span class="gift-in">
@@ -384,7 +464,7 @@
 <section class="sec sand" id="obo-mne">
   <div class="wrap about">
     <div class="about-ph rv">
-      <img src="assets/marianna.webp" width="496" height="520" alt="Подолог Марианна" loading="lazy" decoding="async">
+      <img src="assets/marianna2.webp" width="820" height="820" alt="Подолог Марианна в своём кабинете" loading="lazy" decoding="async">
       <span class="about-tag"><svg width="14" height="14"><use href="#ic-pin"/></svg><span data-i="a.tag">Актобе, салон «Эстетик»</span></span>
     </div>
     <div class="about-txt">
@@ -423,6 +503,7 @@
       <details><summary data-i="f.q2">Нужно ли удалять ноготь?</summary><p data-i="f.a2">В большинстве случаев нет: скоба и правильная обработка позволяют сохранить ноготь. Решение принимаю после осмотра.</p></details>
       <details><summary data-i="f.q3">Сколько стоит приём?</summary><p data-i="f.a3">От 15 000 тг. Точную стоимость называю после осмотра или бесплатной онлайн-консультации по фото.</p></details>
       <details><summary data-i="f.q4">Как подготовиться к визиту?</summary><p data-i="f.a4">Ничего не срезайте сами и не распаривайте ноги. Возьмите удобную обувь, в которой пальцы не сдавлены.</p></details>
+      <details><summary data-i="f.q6">Удаляете ли вы бородавки?</summary><p data-i="f.a6">Да, подошвенные, на пальцах ног и на руках. Сначала осмотр: если нужна консультация дерматолога - подскажу, к кому обратиться.</p></details>
       <details><summary data-i="f.q5">У меня диабет - можно к вам?</summary><p data-i="f.a5">Да, и откладывать не стоит: при диабете ранку, вросший ноготь или воспаление нужно обработать вовремя. Работаю бережно, при необходимости подключаю врача.</p></details>
     </div>
   </div>
@@ -484,6 +565,6 @@
   </div>
 </div>
 
-<script src="script.js?v=20260925-9"></script>
+<script src="script.js?v=20260926-1"></script>
 </body>
 </html>
