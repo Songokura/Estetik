@@ -118,12 +118,17 @@ body.menu-open .mnav{opacity:1;visibility:visible;transform:none;transition:opac
 .hero-in>*{max-width:52%}
 .hero-in .lead{font-size:clamp(15px,1.2vw,18px)}
 .hero-in .btns{margin-top:28px}
+/* герой: связка с врачами - сильный аргумент Марианны, плашкой между лидом и кнопками */
+.hero-docs{display:inline-flex;align-items:center;gap:12px;align-self:flex-start;margin:22px 0 0;padding:10px 18px 10px 10px;border-radius:999px;background:rgba(255,255,255,.78);border:1px solid rgba(183,121,108,.35);box-shadow:0 10px 26px -18px rgba(58,44,39,.5);font:500 13.5px/1.35 var(--ft);color:var(--brown)}
+.hero-docs b{font-weight:700;color:var(--ink)}
+.hd-ic{flex:0 0 auto;width:30px;height:30px;border-radius:50%;background:var(--ink);color:var(--rose);display:grid;place-items:center}
 .hero-in>*{opacity:0;transform:translateY(22px);transition:opacity .9s ease,transform .9s ease}
 .hero.on .hero-in>*{opacity:1;transform:none}
 .hero.on .hero-in>:nth-child(2){transition-delay:.08s}
 .hero.on .hero-in>:nth-child(3){transition-delay:.16s}
 .hero.on .hero-in>:nth-child(4){transition-delay:.24s}
 .hero.on .hero-in>:nth-child(5){transition-delay:.32s}
+.hero.on .hero-in>:nth-child(6){transition-delay:.4s}
 .marq{position:absolute;left:0;right:0;bottom:0;z-index:4;height:46px;display:flex;align-items:center;overflow:hidden;border-top:1px solid var(--line);background:rgba(247,242,237,.78)}
 .ticker{display:flex;white-space:nowrap;will-change:transform;animation:tk var(--tkd,40s) linear infinite}
 .ticker b{flex:0 0 auto;position:relative;padding:0 24px;font:700 11px/1 var(--ft);letter-spacing:.18em;text-transform:uppercase;color:var(--brown)}
@@ -395,6 +400,8 @@ html.no-plate .ticker{animation:none}
   .hero-in .lead{font-size:14px;line-height:1.45}
   .h1{margin:12px 0 12px;font-size:clamp(36px,10.4vw,44px)}
   .hero-in .btns{margin-top:18px}
+  .hero-docs{margin-top:14px;padding:8px 14px 8px 8px;gap:10px;border-radius:16px;font-size:12.5px}
+  .hd-ic{width:26px;height:26px}
   .hero-in .btn{flex:1 1 auto;padding:0 16px;height:50px;font-size:13px}
   .iglink{margin-top:14px}
   .marq{height:40px}
