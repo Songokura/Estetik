@@ -44,7 +44,7 @@ document.addEventListener("keydown", function(e){
   }
 });
 
-/* ---------------- КОНВЕРСИИ GOOGLE ADS (ярлыки задаст index.html позже) ---------------- */
+/* ---------------- КОНВЕРСИИ GOOGLE ADS (ярлыки - window.MP_CONV в <head>, AW-18480201752) ---------------- */
 function conv(key){
   var id = (window.MP_CONV || {})[key];
   if (!id || typeof window.gtag !== "function") return;
@@ -55,7 +55,7 @@ window.addEventListener("click", function(e){
   if (!a) return;
   var h = a.getAttribute("href") || "";
   if (h.indexOf("tel:") === 0) conv("phone");
-  else if (h.indexOf("wa.me") > -1) conv("contact");
+  else if (h.indexOf("wa.me") > -1 || h.indexOf("t.me/") > -1) conv("contact");
 }, true);
 
 /* ---------------- ТЕКСТЫ WHATSAPP ПО УСЛУГАМ ---------------- */
