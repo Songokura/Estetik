@@ -44,7 +44,7 @@ document.addEventListener("keydown", function(e){
   }
 });
 
-/* ---------------- КОНВЕРСИИ GOOGLE ADS (ярлыки - window.MP_CONV в <head>, AW-18480201752) ---------------- */
+/* ---------------- КОНВЕРСИИ GOOGLE ADS (ярлыки - window.MP_CONV в <head>, AW-18484539507) ---------------- */
 function conv(key){
   var id = (window.MP_CONV || {})[key];
   if (!id || typeof window.gtag !== "function") return;
